@@ -4,29 +4,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  /*Removiendo la decoracion de las a y seteando su color en blanco*/
-  text-decoration: none;
-  color: white;
-}
-/*Manteniendo el color blanco cuando pasan por encima de ellas*/
-a:hover {
-  color: white;
-}
-
-.tooltip-inner {
-  /*Cambio de color de fondo de los tooltip*/
-  background-color: #0dcaf0;
-}
-
-.tooltip.bs-tooltip-top .tooltip-arrow::before {
-  border-top-color: #0dcaf0 !important;
-}
-
-.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
-  border-bottom-color: #0dcaf0 !important;
-}
-
 /*Navbar*/
 .navbar {
   /*Settings para dejar un navbar transparente, con fijación arriba y que se muestre sobre los demas contenidos*/
@@ -36,70 +13,84 @@ a:hover {
   width: 100%;
 }
 
+/* Fijando medidas para la imagen del logo en el navbar */
 nav .container img {
   width: 1.8rem;
   height: 1.8rem;
 }
 
-.nav-link {
-  /*Remover decoracion de <a> y cambio de fonts*/
+/*Removiendo la decoracion del texto linkeado al lado del logo "Viajes Chile" y seteando su color en blanco*/
+.navbar-brand {
   text-decoration: none;
-  color: rgba(235, 232, 232, 0.8);
+  color: white;
 }
 
+/*Cambiar a color blanco cuando pasan por encima de las opciones del navbar*/
+a:hover {
+  color: white;
+}
+
+/*Remover decoracion de <a> del navbar, mostrar en color*/
+.nav-link {
+  text-decoration: none;
+  color: wheat;
+}
+
+/*Cambie el color del icono de la hamburguesa de bootstrap por un tono notable, dejando su opacidad en 1*/
 .navbar-toggler-icon {
-  /*Cambie el color del icono de la hamburguesa de bootstrap por un tono notable, dejando su opacidad en 1*/
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/*Cambiar a color blanco cuando pasan por encima de las opciones del navbar*/
 .nav-link:hover {
   color: white;
 }
 
+/*Cambio de color de fondo de los tooltip*/
+.tooltip-inner {
+  background-color: gray;
+}
+
 /*Carousel*/
+
+/*Seteo de tamaño de todas las imagenes por si tienen diferente tamaño*/
 .image-fix {
-  /*Seteo de tamaño de todas las imagenes por si tienen diferente tamaño*/
   width: 100%;
   aspect-ratio: 1.5;
   object-fit: cover;
 }
 
 /*Quienes Somos*/
+
+/*Margen inferior para sección de quienes somos */
 #quienesSomos {
-  background-color: black;
+  margin-bottom: 3rem;
 }
 
+/*Textos de los párrafos en color blanco*/
 #quienesSomos p {
   color: #ffffff;
-  font-family: "ABeeZee", sans-serif;
 }
-
+/*Título h1 con margen superior e inferior y texto blanco*/
 #quienesSomos h1 {
-  font-family: "Asap", sans-serif;
   margin-top: 4rem;
   margin-bottom: 1rem;
   color: white;
 }
-
+/*Línea Horizontal Blanca*/
 #quienesSomos hr {
   color: white;
 }
 
+/*Color de fondo para la sección del ícono*/
 #quienesSomos .icon {
   background-color: #0dcaf0;
 }
 
+/*Margenes para el ícono no toque los bordes en su contenedor de fondo */
 #quienesSomos i {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
-}
-
-#quienesSomos .titulo {
-  margin-bottom: 2rem;
-}
-
-#quienesSomos .col-lg-4 {
-  margin-bottom: 3rem;
 }
 
 /*Destacados*/
