@@ -151,7 +151,7 @@
           </div>
           <!-- Uso de Clase Utilitaria de Bootstrap Flex "align-items-start" en fila-->
           <div class="row align-items-start">
-            <!-- Cambiar div por etiqueta semántica article-->
+            <!-- Etiqueta semántica article para primer elemento del row-->
             <article class="col-12 col-lg-4">
               <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
               <div class="text-center icon">
@@ -175,7 +175,7 @@
                 deserunt praesentium.
               </p>
             </article>
-            <!-- Cambiar div por etiqueta semántica article 2-->
+            <!-- Etiqueta semántica article para segundo elemento del row-->
             <article class="col-12 col-lg-4">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
@@ -198,7 +198,7 @@
                 ></i>
               </div>
             </article>
-            <!-- Cambiar div por etiqueta semántica article 3-->
+            <!-- Etiqueta semántica article para tercer elemento del row-->
             <article class="col-12 col-lg-4">
               <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
               <div class="text-center icon">
@@ -228,9 +228,7 @@
 
       <!-- Sección Destacados -->
       <!-- Etiqueta semántica Section para Destacados-->
-      <!-- Uso de Cards de Bootstrap(2) -->
-
-      <!-- Sección Destacados -->
+      <!-- Uso de Componente Bootstrap: Cards -->
       <section id="destacados">
         <div class="titulo-destacados">
           <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
@@ -239,10 +237,10 @@
         </div>
         <!-- Uso de Grilla de Bootstrap al definir "container", "row", "col-" en Sección Destacados -->
         <div class="container">
+          <!-- Uso de Elemento de Layout "Vertical Glutters" para el espaciado entre cards cuando se dispongan de manera vertical en tamaños mobile (gy-4)-->
           <div class="row gy-4">
             <!-- Determino columna con bootstrap para anidar una card-->
-            <div class="col-sm-12 col-lg-3">
-              <!-- Cambiar a figure como etiqueta semántica: unidad de contenido independiente que da información de apoyo o complementaria -->
+            <div class="col-12 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/img/card1.jpg"
@@ -259,8 +257,7 @@
               </div>
             </div>
             <!-- Determino columna con bootstrap para anidar una card-->
-            <div class="col-sm-12 col-lg-3">
-              <!-- Cambiar a figure como etiqueta semántica: unidad de contenido independiente que da información de apoyo o complementaria -->
+            <div class="col-12 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/img/card2.jpg"
@@ -277,8 +274,7 @@
               </div>
             </div>
             <!-- Determino columna con bootstrap para anidar una card-->
-            <div class="col-sm-12 col-lg-3">
-              <!-- Cambiar a figure como etiqueta semántica: unidad de contenido independiente que da información de apoyo o complementaria -->
+            <div class="col-12 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/img/card3.jpg"
@@ -295,8 +291,7 @@
               </div>
             </div>
             <!-- Determino columna con bootstrap para anidar una card-->
-            <div class="col-sm-12 col-lg-3">
-              <!-- Cambiar a figure como etiqueta semántica: unidad de contenido independiente que da información de apoyo o complementaria -->
+            <div class="col-12 col-lg-3">
               <div class="card h-100">
                 <img
                   src="./assets/img/card4.jpg"
@@ -318,10 +313,10 @@
 
       <!-- Sección Contacto -->
       <!-- Etiqueta semántica Section para Contacto-->
-      <!-- Uso de Forms de Bootstrap(3) -->
+      <!-- Uso de Forms de Bootstrap -->
       <section id="contacto">
         <div class="titulo-contacto">
-          <!-- Tooltip Nº1, Componente de Bootstrap JS 2, ventana emergente al pasar sobre el texto de Contactanos -->
+          <!-- Componente de Bootstrap JS Tooltip, ventana emergente al pasar sobre el texto de Contactanos -->
           <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
           <h1
             class="text-center"
@@ -380,82 +375,85 @@
             </button>
           </div>
         </form>
-      </section>
-
-      <!-- Modal: ventana emergente al hacer click sobre "enviar" en formulario -->
-      <div
-        class="modal fade"
-        id="mimodal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Verificación</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              El correo fue enviado exitosamente. Pronto nos comunicaremos
-              contigo.
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
+        <!-- Modal: ventana emergente al hacer click sobre "enviar" en formulario -->
+        <div
+          class="modal fade"
+          id="mimodal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Verificación</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                El correo fue enviado exitosamente. Pronto nos comunicaremos
+                contigo.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- Sección Footer  -->
-    <!-- Etiqueta semántica Footer para Footer-->
-    <!-- Uso de Cards de Bootstrap(2) -->
+    <!-- Etiqueta semántica Footer-->
     <footer>
       <div class="container">
         <!-- Uso de Clase Utilitaria de Bootstrap Diplay "d-flex" en footer-->
         <!-- Uso de Clase Utilitaria de Bootstrap Flex "flex-wrap", "justify-content", "align-items-center" en footer-->
-        <!-- Uso de Elementos de Grilla de Bootstrap al definir "container" y usar "col-" en Footer-->
+        <!-- Uso de Elementos de Grilla (Layout) de Bootstrap al definir "container" y usar "col-" en Footer-->
         <!-- Uso de Clase Utilitaria de Bootstrap Spacing Padding en Footer -->
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3"
+          class="d-flex flex-wrap justify-content-center align-items-center"
         >
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="footer-text">VIAJES CHILE</span>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <span>VIAJES CHILE</span>
           </div>
-
-          <ul class="nav col-md-4 justify-content-end d-flex footer-icons">
-            <li class="ms-3">
-              <a target="_blank" href="https://github.com"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a target="_blank" href="https://www.linkedin.com/"
-                ><i class="fab fa-linkedin fa-2x"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a target="_blank" href="https://twitter.com/"
-                ><i class="fab fa-twitter-square fa-2x"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a target="_blank" href="https://www.facebook.com/"
-                ><i class="fab fa-facebook-square fa-2x"></i
-              ></a>
-            </li>
-          </ul>
+          <div
+            class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-center"
+          >
+            <ul>
+              <li class="m-2">
+                <a target="_blank" href="https://github.com"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </li>
+              <li class="m-2">
+                <a target="_blank" href="https://www.linkedin.com/"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </li>
+              <li class="m-2">
+                <a target="_blank" href="https://twitter.com/"
+                  ><i class="fab fa-twitter-square fa-2x"></i
+                ></a>
+              </li>
+              <li class="m-2">
+                <a target="_blank" href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook-square fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </footer>
       </div>
     </footer>

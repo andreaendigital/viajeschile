@@ -45,7 +45,6 @@ nav .container img {
   /*Remover decoracion de <a> y cambio de fonts*/
   text-decoration: none;
   color: rgba(235, 232, 232, 0.8);
-  font-family: "ABeeZee", sans-serif;
 }
 
 .navbar-toggler-icon {
@@ -171,11 +170,8 @@ footer {
 footer span,
 i {
   color: white;
-  font-size: 19px;
+  font-size: 24px;
 }
-.footer-text {
-  padding-left: 10rem;
-}
-.footer-icons {
-  padding-right: 10rem;
+footer ul {
+  list-style: none;
 }
