@@ -40,9 +40,11 @@
       <!-- Sección NavBar-->
       <!-- Etiqueta semántica Nav para sección de navegación -->
       <!-- Uso de Componente de Bootrstrap Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg">
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="#carousel"
+          <a
+            class="navbar-brand text-decoration-none text-white"
+            href="#carousel"
             ><img src="./assets/img/viajes.svg" alt="logoViajes" /> Viajes
             Chile</a
           >
@@ -55,7 +57,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-white"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin -->
@@ -92,7 +94,7 @@
               <!-- Uso de Clase Utilitaria de Bootstrap Diplay "d-block" y Sizing "w-100"-->
               <img
                 src="./assets/img/carousel1.jpg"
-                class="d-block w-100 image-fix"
+                class="d-block w-100 img-fluid"
                 alt="desierto chile con cordillera de fondo"
               />
             </div>
@@ -100,7 +102,7 @@
               <!-- Uso de Clase Utilitaria de Bootstrap Diplay "d-block" y Sizing "w-100"-->
               <img
                 src="./assets/img/carousel2.jpg"
-                class="d-block w-100 image-fix"
+                class="d-block w-100 img-fluid"
                 alt="isla de rapanui al atardecer"
               />
             </div>
@@ -108,7 +110,7 @@
             <div class="carousel-item">
               <img
                 src="./assets/img/carousel3.jpg"
-                class="d-block w-100 image-fix"
+                class="d-block w-100 img-fluid"
                 alt="pinguino"
               />
             </div>
@@ -143,12 +145,11 @@
       <section id="quienesSomos">
         <!-- Uso de Grilla de Bootstrap al definir "container", "row", "col-" en Sección Quienes Somos-->
         <!-- Uso de Clase Utilitaria de Bootstrap Display "d-none" y "d-sm-block" indicando que la sección se oculte por defecto y se muestre desde los 576 px en adelante (tamaño sm)-->
-        <div class="container d-none d-sm-block">
-          <div class="titulo">
-            <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-            <h1 class="text-center">QUIENES SOMOS</h1>
-            <hr />
-          </div>
+        <div class="container d-none d-sm-block mb-5">
+          <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+          <h1 class="text-center text-white mt-4 mb-1">QUIENES SOMOS</h1>
+          <hr class="text-white ms-5 me-5" />
+
           <!-- Uso de Clase Utilitaria de Bootstrap Flex "align-items-start" en fila-->
           <div class="row align-items-start">
             <!-- Etiqueta semántica article para primer elemento del row-->
@@ -157,14 +158,14 @@
               <div class="text-center icon">
                 <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
                 <i
-                  class="fas fa-plane fa-2x"
+                  class="fas fa-plane fa-2x mt-1 mb-1"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title="Viaja donde quieras"
                 ></i>
               </div>
               <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
-              <p class="mt-2">
+              <p class="mt-2 text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
                 quos id, debitis voluptatibus fuga quae explicabo molestiae at
                 blanditiis maiores modi distinctio ab perferendis beatae minima,
@@ -177,7 +178,7 @@
             </article>
             <!-- Etiqueta semántica article para segundo elemento del row-->
             <article class="col-12 col-lg-4">
-              <p>
+              <p class="text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
                 quos id, debitis voluptatibus fuga quae explicabo molestiae at
                 blanditiis maiores modi distinctio ab perferendis beatae minima,
@@ -191,7 +192,7 @@
               <div class="text-center icon mb-2">
                 <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
                 <i
-                  class="fas fa-mountain fa-2x"
+                  class="fas fa-mountain fa-2x mt-1 mb-1"
                   data-bs-toggle="tooltip"
                   data-bs-placement="bottom"
                   title="Expediciones en Montañas"
@@ -204,14 +205,14 @@
               <div class="text-center icon">
                 <!-- Asigné a ícono Componente Bootstrap JS Tooltip -->
                 <i
-                  class="fas fa-route fa-2x"
+                  class="fas fa-route fa-2x mt-1 mb-1"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title="Rutas que te sorprenderán"
                 ></i>
               </div>
               <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
-              <p class="mt-2">
+              <p class="mt-2 text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
                 quos id, debitis voluptatibus fuga quae explicabo molestiae at
                 blanditiis maiores modi distinctio ab perferendis beatae minima,
@@ -230,15 +231,14 @@
       <!-- Etiqueta semántica Section para Destacados-->
       <!-- Uso de Componente Bootstrap: Cards -->
       <section id="destacados">
-        <div class="titulo-destacados">
-          <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-          <h1 class="text-center">DESTACADOS</h1>
-          <hr />
-        </div>
+        <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+        <h1 class="text-center text-white mt-2 mb-1">DESTACADOS</h1>
+        <hr class="text-white ms-5 me-5" />
+
         <!-- Uso de Grilla de Bootstrap al definir "container", "row", "col-" en Sección Destacados -->
         <div class="container">
           <!-- Uso de Elemento de Layout "Vertical Glutters" para el espaciado entre cards cuando se dispongan de manera vertical en tamaños mobile (gy-4)-->
-          <div class="row gy-4">
+          <div class="row gy-4 text-white text-center">
             <!-- Determino columna con bootstrap para anidar una card-->
             <div class="col-12 col-lg-3">
               <div class="card h-100">
@@ -315,21 +315,20 @@
       <!-- Etiqueta semántica Section para Contacto-->
       <!-- Uso de Forms de Bootstrap -->
       <section id="contacto">
-        <div class="titulo-contacto">
-          <!-- Componente de Bootstrap JS Tooltip, ventana emergente al pasar sobre el texto de Contactanos -->
-          <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-          <h1
-            class="text-center"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Valoramos tu opinion"
-          >
-            CONTACTO
-          </h1>
-          <hr />
-        </div>
+        <!-- Componente de Bootstrap JS Tooltip, ventana emergente al pasar sobre el texto de Contactanos -->
+        <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+        <h1
+          class="text-center text-white mt-5 mb-1"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Valoramos tu opinion"
+        >
+          CONTACTO
+        </h1>
+        <hr class="text-white ms-5 me-5" />
+
         <form>
-          <div class="container">
+          <div class="container text-white">
             <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
             <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label"
@@ -367,7 +366,7 @@
             <!-- Disparador de Modal, Componente de Bootstrap JS, ventana emergente -->
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-primary mb-5 border-0"
               data-bs-toggle="modal"
               data-bs-target="#mimodal"
             >
@@ -426,7 +425,7 @@
           <div
             class="col-12 col-md-6 d-flex align-items-center justify-content-center"
           >
-            <span>VIAJES CHILE</span>
+            <span class="text-white fs-6">VIAJES CHILE</span>
           </div>
           <div
             class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-center"
@@ -434,22 +433,22 @@
             <ul class="list-unstyled d-flex mb-0">
               <li class="m-2">
                 <a target="_blank" href="https://github.com"
-                  ><i class="fab fa-github fa-2x"></i
+                  ><i class="fab fa-github fa-2x text-white"></i
                 ></a>
               </li>
               <li class="m-2">
                 <a target="_blank" href="https://www.linkedin.com/"
-                  ><i class="fab fa-linkedin fa-2x"></i
+                  ><i class="fab fa-linkedin fa-2x text-white"></i
                 ></a>
               </li>
               <li class="m-2">
                 <a target="_blank" href="https://twitter.com/"
-                  ><i class="fab fa-twitter-square fa-2x"></i
+                  ><i class="fab fa-twitter-square fa-2x text-white"></i
                 ></a>
               </li>
               <li class="m-2">
                 <a target="_blank" href="https://www.facebook.com/"
-                  ><i class="fab fa-facebook-square fa-2x"></i
+                  ><i class="fab fa-facebook-square fa-2x text-white"></i
                 ></a>
               </li>
             </ul>

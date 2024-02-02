@@ -5,45 +5,15 @@ body {
 }
 
 /*Navbar*/
-.navbar {
-  /*Settings para dejar un navbar transparente, con fijación arriba y que se muestre sobre los demas contenidos*/
-  position: fixed;
-  background: none;
-  z-index: 2;
-  width: 100%;
-}
-
 /* Fijando medidas para la imagen del logo en el navbar */
 nav .container img {
   width: 1.8rem;
   height: 1.8rem;
 }
 
-/*Removiendo la decoracion del texto linkeado al lado del logo "Viajes Chile" y seteando su color en blanco*/
-.navbar-brand {
-  text-decoration: none;
-  color: white;
-}
-
-/*Cambiar a color blanco cuando pasan por encima de las opciones del navbar*/
-a:hover {
-  color: white;
-}
-
-/*Remover decoracion de <a> del navbar, mostrar en color*/
-.nav-link {
-  text-decoration: none;
-  color: wheat;
-}
-
-/*Cambie el color del icono de la hamburguesa de bootstrap por un tono notable, dejando su opacidad en 1*/
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 /*Cambiar a color blanco cuando pasan por encima de las opciones del navbar*/
 .nav-link:hover {
-  color: white;
+  color: black !important;
 }
 
 /*Cambio de color de fondo de los tooltip*/
@@ -51,63 +21,12 @@ a:hover {
   background-color: gray;
 }
 
-/*Carousel*/
-
-/*Seteo de tamaño de todas las imagenes por si tienen diferente tamaño*/
-.image-fix {
-  width: 100%;
-  aspect-ratio: 1.5;
-  object-fit: cover;
-}
-
-/*Quienes Somos*/
-
-/*Margen inferior para sección de quienes somos */
-#quienesSomos {
-  margin-bottom: 3rem;
-}
-
-/*Textos de los párrafos en color blanco*/
-#quienesSomos p {
-  color: #ffffff;
-}
-/*Título h1 con margen superior e inferior y texto blanco*/
-#quienesSomos h1 {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-/*Línea Horizontal Blanca*/
-#quienesSomos hr {
-  color: white;
-}
-
-/*Color de fondo para la sección del ícono*/
+/*Quienes Somos: Color de fondo para la sección del ícono*/
 #quienesSomos .icon {
   background-color: #0dcaf0;
 }
 
-/*Margenes para el ícono no toque los bordes en su contenedor de fondo */
-#quienesSomos i {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-}
-
-/*Destacados*/
-
-/*Textos de la sección en blanco y alineados de manera central*/
-#destacados {
-  color: white;
-  text-align: center;
-}
-
-/*Título h1 con margen superior e inferior y texto blanco*/
-#destacados h1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/*Seteo de altura de la imagen de las cartas para que posean la misma altura*/
+/*Destacados: Seteo de altura de la imagen de las cartas para que posean la misma altura*/
 #destacados .card img {
   max-height: 170px;
 }
@@ -117,45 +36,12 @@ a:hover {
   background-color: #0dcaf0;
 }
 
-/*Contacto*/
-/*Margen Inferior para la sección*/
-#contacto {
-  margin-bottom: 2rem;
-}
-
-/*Margenes y color para el título de la sección*/
-#contacto h1 {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-/*Margenes y color para la línea bajo el título de la sección*/
-.titulo-contacto hr {
-  color: white;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-/*Color blanco para el texto de las etiquetas del formulario y botón*/
-#contacto label,
-button {
-  color: white;
-}
-/*Color de fondo del botón, sin bordes*/
+/*Contacto: Color de fondo del botón*/
 #contacto button {
   background-color: #0dcaf0;
-  border: 0;
 }
 
-/*Footer*/
-/*Color de fondo*/
+/*Footer: Color de fondo*/
 footer {
   background-color: #0dcaf0;
-}
-/*Color de texto e íconos*/
-footer span,
-i {
-  color: white;
-  font-size: 24px;
 }
