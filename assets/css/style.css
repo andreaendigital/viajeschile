@@ -94,70 +94,66 @@ a:hover {
 }
 
 /*Destacados*/
-#destacados .titulo-destacados hr {
-  color: white;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
 
-#destacados p,
-h5 {
-  font-family: "Questrial", sans-serif;
+/*Textos de la sección en blanco y alineados de manera central*/
+#destacados {
   color: white;
   text-align: center;
 }
 
+/*Título h1 con margen superior e inferior y texto blanco*/
 #destacados h1 {
-  font-family: "Asap", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: white;
 }
 
+/*Seteo de altura de la imagen de las cartas para que posean la misma altura*/
 #destacados .card img {
-  /*Seteo de altura de la imagen de las cartas para que posean la misma altura*/
-  height: 202.7px;
+  max-height: 170px;
 }
 
-#destacados .card-body {
+/*Color del fondo de la tarjeta*/
+.card-body {
   background-color: #0dcaf0;
 }
 
 /*Contacto*/
+/*Margen Inferior para la sección*/
 #contacto {
   margin-bottom: 2rem;
 }
 
-#contacto .titulo-contacto hr {
-  color: white;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
+/*Margenes y color para el título de la sección*/
 #contacto h1 {
   margin-top: 4rem;
   margin-bottom: 1rem;
   color: white;
 }
 
+/*Margenes y color para la línea bajo el título de la sección*/
+.titulo-contacto hr {
+  color: white;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/*Color blanco para el texto de las etiquetas del formulario y botón*/
 #contacto label,
 button {
   color: white;
 }
-
+/*Color de fondo del botón, sin bordes*/
 #contacto button {
   background-color: #0dcaf0;
   border: 0;
 }
 
-.modal-title {
-  color: black;
-}
-
 /*Footer*/
+/*Color de fondo*/
 footer {
   background-color: #0dcaf0;
 }
+/*Color de texto e íconos*/
 footer span,
 i {
   color: white;
