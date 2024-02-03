@@ -3,44 +3,42 @@ body {
   background-color: black;
   font-family: "Poppins", sans-serif;
 }
-
 /*Navbar*/
 /* Fijando medidas para la imagen del logo en el navbar */
 nav .container img {
   width: 1.8rem;
   height: 1.8rem;
 }
-
 /*Cambiar a color blanco cuando pasan por encima de las opciones del navbar*/
 .nav-link:hover {
   color: black !important;
 }
-
 /*Cambio de color de fondo de los tooltip*/
 .tooltip-inner {
   background-color: gray;
 }
-
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: gray !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: gray !important;
+}
 /*Quienes Somos: Color de fondo para la sección del ícono*/
 #quienesSomos .icon {
   background-color: #0dcaf0;
 }
-
 /*Destacados: Seteo de altura de la imagen de las cartas para que posean la misma altura*/
 #destacados .card img {
   max-height: 170px;
 }
-
 /*Color del fondo de la tarjeta*/
 .card-body {
   background-color: #0dcaf0;
 }
-
 /*Contacto: Color de fondo del botón*/
 #contacto button {
   background-color: #0dcaf0;
 }
-
 /*Footer: Color de fondo*/
 footer {
   background-color: #0dcaf0;

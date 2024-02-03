@@ -30,59 +30,54 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- Conexión a Style CSS -->
+    <!-- Conexión a Style CSS local o personalizado-->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <!-- Etiqueta semantica header que incluye navbar y carrusel-->
-    <header>
-      <!-- Sección NavBar-->
-      <!-- Etiqueta semántica Nav para sección de navegación -->
-      <!-- Uso de Componente de Bootrstrap Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-          <a
-            class="navbar-brand text-decoration-none text-white"
-            href="#carousel"
-            ><img src="./assets/img/viajes.svg" alt="logoViajes" /> Viajes
-            Chile</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon text-white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#carousel">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#destacados">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <!-- Sección NavBar-->
+    <!-- Etiqueta semántica Nav para sección de navegación -->
+    <!-- Uso de Componente de Bootrstrap Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand text-decoration-none text-white" href="#carousel"
+          ><img src="./assets/img/viajes.svg" alt="logoViajes" /> Viajes
+          Chile</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
+      </div>
+    </nav>
+    <header>
       <!-- Sección Carrusel con img destacadas -->
       <!-- Etiqueta semántica Section para Carrusel-->
       <!-- Componente de Bootstrap JS -->
-
       <section id="carousel">
         <div
           id="carouselExampleFade"
@@ -138,92 +133,89 @@
       </section>
     </header>
 
-    <!-- Etiqueta Semántica Main hasta antes del footer que incluye secciones quienes somos, destacados y contacto-->
+    <!-- Etiqueta Semántica Main incluye tres secciones: quienes somos, destacados y contacto-->
     <main>
       <!-- Sección Quiénes Somos -->
       <!-- Etiqueta semántica Section para Quienes Somos-->
-      <section id="quienesSomos">
-        <!-- Uso de Grilla de Bootstrap al definir "container", "row", "col-" en Sección Quienes Somos-->
-        <!-- Uso de Clase Utilitaria de Bootstrap Display "d-none" y "d-sm-block" indicando que la sección se oculte por defecto y se muestre desde los 576 px en adelante (tamaño sm)-->
-        <div class="container d-none d-sm-block mb-5">
-          <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-          <h1 class="text-center text-white mt-4 mb-1">QUIENES SOMOS</h1>
-          <hr class="text-white ms-5 me-5" />
-
-          <!-- Uso de Clase Utilitaria de Bootstrap Flex "align-items-start" en fila-->
-          <div class="row align-items-start">
-            <!-- Etiqueta semántica article para primer elemento del row-->
-            <article class="col-12 col-lg-4">
-              <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-              <div class="text-center icon">
-                <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
-                <i
-                  class="fas fa-plane fa-2x mt-1 mb-1"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Viaja donde quieras"
-                ></i>
-              </div>
-              <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
-              <p class="mt-2 text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-                quos id, debitis voluptatibus fuga quae explicabo molestiae at
-                blanditiis maiores modi distinctio ab perferendis beatae minima,
-                iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Tenetur aliquid excepturi animi
-                nemo? Consequatur architecto voluptatibus magni quam voluptates,
-                soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
-                deserunt praesentium.
-              </p>
-            </article>
-            <!-- Etiqueta semántica article para segundo elemento del row-->
-            <article class="col-12 col-lg-4">
-              <p class="text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-                quos id, debitis voluptatibus fuga quae explicabo molestiae at
-                blanditiis maiores modi distinctio ab perferendis beatae minima,
-                iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Tenetur aliquid excepturi animi
-                nemo? Consequatur architecto voluptatibus magni quam voluptates,
-                soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
-                deserunt praesentium.
-              </p>
-              <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-              <div class="text-center icon mb-2">
-                <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
-                <i
-                  class="fas fa-mountain fa-2x mt-1 mb-1"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  title="Expediciones en Montañas"
-                ></i>
-              </div>
-            </article>
-            <!-- Etiqueta semántica article para tercer elemento del row-->
-            <article class="col-12 col-lg-4">
-              <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
-              <div class="text-center icon">
-                <!-- Asigné a ícono Componente Bootstrap JS Tooltip -->
-                <i
-                  class="fas fa-route fa-2x mt-1 mb-1"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Rutas que te sorprenderán"
-                ></i>
-              </div>
-              <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
-              <p class="mt-2 text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-                quos id, debitis voluptatibus fuga quae explicabo molestiae at
-                blanditiis maiores modi distinctio ab perferendis beatae minima,
-                iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Tenetur aliquid excepturi animi
-                nemo? Consequatur architecto voluptatibus magni quam voluptates,
-                soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
-                deserunt praesentium.
-              </p>
-            </article>
-          </div>
+      <!-- Uso de Grilla de Bootstrap al definir "container", "row", "col-" en Sección Quienes Somos-->
+      <!-- Uso de Clase Utilitaria de Bootstrap Display "d-none" y "d-sm-block" indicando que la sección se oculte por defecto y se muestre desde los 576 px en adelante (tamaño sm)-->
+      <section class="container d-none d-sm-block mb-5" id="quienesSomos">
+        <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+        <h1 class="text-center text-white mt-4 mb-1">QUIENES SOMOS</h1>
+        <hr class="text-white ms-5 me-5" />
+        <!-- Uso de Clase Utilitaria de Bootstrap Flex "align-items-start" en fila-->
+        <div class="row align-items-start">
+          <!-- Etiqueta semántica article para primer elemento del row-->
+          <article class="col-12 col-lg-4 text-white">
+            <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+            <div class="text-center icon">
+              <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
+              <i
+                class="fas fa-plane fa-2x mt-1 mb-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Viaja donde quieras"
+              ></i>
+            </div>
+            <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
+            <p class="mt-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+              quos id, debitis voluptatibus fuga quae explicabo molestiae at
+              blanditiis maiores modi distinctio ab perferendis beatae minima,
+              iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur aliquid excepturi animi
+              nemo? Consequatur architecto voluptatibus magni quam voluptates,
+              soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
+              deserunt praesentium.
+            </p>
+          </article>
+          <!-- Etiqueta semántica article para segundo elemento del row-->
+          <article class="col-12 col-lg-4 text-white">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+              quos id, debitis voluptatibus fuga quae explicabo molestiae at
+              blanditiis maiores modi distinctio ab perferendis beatae minima,
+              iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur aliquid excepturi animi
+              nemo? Consequatur architecto voluptatibus magni quam voluptates,
+              soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
+              deserunt praesentium.
+            </p>
+            <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+            <div class="text-center icon mb-2">
+              <!-- Asigné a ícono Componente Bootstrap JS Tooltip-->
+              <i
+                class="fas fa-mountain fa-2x mt-1 mb-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Expediciones en Montañas"
+              ></i>
+            </div>
+          </article>
+          <!-- Etiqueta semántica article para tercer elemento del row-->
+          <article class="col-12 col-lg-4 text-white">
+            <!-- Uso de Clase Utilitaria de Bootstrap Text Alignment "text-center"-->
+            <div class="text-center icon">
+              <!-- Asigné a ícono Componente Bootstrap JS Tooltip -->
+              <i
+                class="fas fa-route fa-2x mt-1 mb-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Rutas que te sorprenderán"
+              ></i>
+            </div>
+            <!-- Uso de Clase Utilitaria de Bootstrap Spacing Margin-->
+            <p class="mt-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+              quos id, debitis voluptatibus fuga quae explicabo molestiae at
+              blanditiis maiores modi distinctio ab perferendis beatae minima,
+              iusto vel. Voluptatibus, reiciendis? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur aliquid excepturi animi
+              nemo? Consequatur architecto voluptatibus magni quam voluptates,
+              soluta reprehenderit dolorem rem ex iusto dignissimos hic nemo
+              deserunt praesentium.
+            </p>
+          </article>
         </div>
       </section>
 
